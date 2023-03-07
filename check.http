@@ -1,0 +1,27 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "user_id" : "kiran4",
+    "username" : "kirannandamur" , 
+    "password" : "kiran7609" ,
+    "role" : "Master"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username" : "kirannandamur" ,
+    "password" : "kiran7609"
+}
+
+###
+POST http://localhost:3000/activity/post/
+Authorization: 'BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtpcmFubmFuZGFtdXIiLCJpYXQiOjE2NzgxNjYxOTB9.c-XvSAbqpOoHdn41PhCRsx3dbuPUm6OaboGT24CQf9w '
+Content-Type: application/json
+
+{
+    "activity" : "15+2"
+}
